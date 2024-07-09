@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My-Portfolio</title>
+    <link href="project.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h1 class="name">Partha.</h1>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#Achievements">Achievements</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i id = "cross"class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i id = "gear" class="fa-solid fa-gear"></i>
+                <i id = "menu"class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Web Developer</p>
+                <h1 class="ani">I'm Partha Pratim Nath <br>from Assam,India</h1>
+            </div>
+        </div>
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="image3.jpeg"/>
+                </div>
+                <div class="about-col-2">
+                    <h1 class="Me">About Me</h1>
+                    <p class="About">Hello! I'm Partha Pratim Nath,  an enthusiast Web Developer, who is interested in learning about web developemnet and designing Websites.I am currently pursuing my BTech in Mechanical Engeneering from NIT Silchar. I am eager to learn more about development and improve my skills and knowledge in this domain  </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('extra-curricular')">Extra-curricular</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>HTML</span><br>For creating the basic layout of the website</li>
+                            <li><span>CSS</span><br>For designing our website to make it look attractive</li>
+                            <li><span>Javascript</span><br>For defining the working of the website</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>St.Francis De Sales Higher Secondary School</span><br>Passing of 10th</li>
+                            <li><span>St.Francis De Sales Higher Secondary School</span><br>Passing of 12th</li>
+                            <li><span>NIT Silchar</span><br>BTech in Mechanical Engineering</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="extra-curricular">
+                        <ul>
+                            <li><span>Gen AI Study Jams</span><br>Participated in 2024 Gen AI Study Jams</li>
+                            <li><span>Business quiz</span><br>Third prize winner of business quiz</li>
+                            <li><span>Reading books</span><br>Love to read books related to science and technology</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="Achievements">
+        <div class="container">
+            <h1 class="Me">My Achievements</h1>
+            <div class="Achievements-list">
+                <div>
+                    <h1>CSS Certification</h1>
+                    <p>This certificate was given to me by Hackerrank on successfully competing their exam on CSS</p>
+                    <a href="css certificate.pdf">Learn more</a>
+                </div>
+                <div>
+                    <h1>C Certification</h1>
+                    <p>This certificate was given to me by CEC on successfully competing their exam on basics of C programming</p>
+                    <a href="C programming certificate.pdf">Learn more</a>
+                </div>
+                <div>
+                    <h1>Gen AI Certification</h1>
+                    <p>This certificate was given to me by Google on successfully competing their course in Generative AI   </p>
+                    <a href="Gen AI Study Jams.pdf">Learn more</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="Me">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="work1.jpg"/>
+                    <div class="layers">
+                        <h2>Weather-website</h2>
+                        <p>Interactive Website that takes user input city name and returns the temperature, humidity, wind-speed of that perticular city</p>
+                        <a href="https://parthapnath.github.io/Weather-website/">Link</a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="work2.jpg"/>
+                    <div class="layers">
+                        <h2>Rock paper and scissor-website</h2>
+                        <p>It is simple rock paper and scissor game website that allows user to play with the system</p>
+                        <a href="https://parthapnath.github.io/Rock-Paper-Scissors-game/">Link</a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="work3.avif"/>
+                    <div class="layers">
+                        <h2>To Do list-website</h2>
+                        <p>Interactive Website that allows users to manage their daily tasks in the form of a To-Do List</p>
+                        <a href="https://parthapnath.github.io/To-do-list/">Link</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="Me">Contact Me</h1>
+                    <p class="me">Email ID - parthapratimnath51@gmail.com</p>
+                    <p class="ph">Phone number - 9395246015</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/profile.php?id=100093493687389"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/parthapratim9988/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://github.com/Parthapnath"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <a href="Resume(E-Cell).docx"><button class="btn">Download Resume</button></a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required/>
+                        <input type="email" name="Email" placeholder="Your Email" required/>
+                        <textarea name="Message" rows="6" placeholde="Your Meassage"></textarea>
+                        <button type="Submit" class="btn2">Submit</button>
+                    </form>
+                    <span id="Msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Made by Partha Pratim Nath </p>
+        </div>
+    </div>
+    <script src="project.js"></script>
+</body>
+</html>
